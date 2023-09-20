@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+    <include
+        layout="@layout/custom_toolbar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHUYẾN ĐI: 12"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.973"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MẺ: 3"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.204" />
+
+    <Button
+        android:id="@+id/nhatkyBtn"
+        android:layout_width="332dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/white"
+        android:text="NHẬT KÝ"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints"
+        android:layout_marginRight="30dp"></Button>
+
+    <Button
+        android:id="@+id/baocaoBtn"
+        android:layout_width="332dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/white"
+        android:text="BÁO CÁO"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nhatkyBtn"
+        tools:ignore="MissingConstraints"></Button>
+
+    <Button
+        android:id="@+id/tinnhanBtn"
+        android:layout_width="332dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/white"
+        android:text="TIN NHẮN"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baocaoBtn"
+        tools:ignore="MissingConstraints"
+        android:layout_marginRight="30dp"></Button>
+
+    <Button
+        android:id="@+id/caidatBtn"
+        android:layout_width="332dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="64dp"
+        android:text="CÀI ĐẶT"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context=".DiaryActivity"
+    tools:layout_editor_absoluteX="29dp"
+    tools:layout_editor_absoluteY="0dp">
+    <include
+        layout="@layout/custom_toolbar" />
+    <Button
+        android:id="@+id/exitBtn"
+        android:layout_width="166dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/white"
+        android:text="ĐÓNG"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"></Button>
+
+    <ImageView
+        android:id="@+id/xuatbenIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/xuatben_on"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thaluoiIv"
+        tools:ignore="MissingConstraints"></ImageView>
+
+    <ImageView
+        android:id="@+id/nhapnhatkyIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="486dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/nhapnhatky_off"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thuluoiIv"
+        tools:ignore="MissingConstraints"></ImageView>
+
+    <ImageView
+        android:id="@+id/thuluoiIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/thuluoi_off"
+        app:layout_constraintStart_toEndOf="@+id/xuatbenIv"
+        app:layout_constraintTop_toBottomOf="@+id/thaluoiIv"
+        tools:ignore="MissingConstraints"></ImageView>
+
+    <ImageView
+        android:id="@+id/thaluoiIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="486dp"
+        android:layout_marginTop="86dp"
+        android:src="@drawable/thaluoi_off"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"></ImageView>
+
+    <ImageView
+        android:id="@+id/nhapbenIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/nhapben_off"
+        app:layout_constraintStart_toEndOf="@+id/thuluoiIv"
+        app:layout_constraintTop_toBottomOf="@+id/thaluoiIv"
+        tools:ignore="MissingConstraints"></ImageView>
+</androidx.constraintlayout.widget.ConstraintLayout>

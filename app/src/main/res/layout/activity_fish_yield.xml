@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context=".FishYieldActivity">
+    <FrameLayout
+        android:layout_width="960dp"
+        android:layout_height="797dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="15dp"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </FrameLayout>
+    <View android:background="@color/black"
+        android:layout_gravity="top|start"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="1dp"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="255dp"
+        android:layout_height="797dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/exitBtn"
+            android:layout_width="192dp"
+            android:layout_height="82dp"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="@color/white"
+            android:text="ĐÓNG"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold">
+        </Button>
+
+        <TextView
+            android:id="@+id/chuyendiTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="CHUYẾN SỐ: 12"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.969"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.26" />
+
+        <TextView
+            android:id="@+id/meCaTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="MẺ HIỆN TẠI: 3"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/chuyendiTv"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.338" />
+
+        <TextView
+            android:id="@+id/soluongTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="SL: 3 loại"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/meCaTv"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.412" />
+
+        <TextView
+            android:id="@+id/tongSLTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="TSL: 12,000 Kg"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/soluongTv"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.494" />
+
+        <Button
+            android:id="@+id/caidatBtn"
+            android:layout_width="229dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="200dp"
+            android:text="GỬI"
+            android:textSize="40sp"
+            android:textStyle="bold"
+
+            tools:ignore="MissingConstraints"></Button>
+
+    </LinearLayout>
+
+</LinearLayout>
